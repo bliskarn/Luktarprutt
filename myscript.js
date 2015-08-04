@@ -35,6 +35,9 @@ function handleText(textNode)
 
 	v = v.replace(/\bgynnar SD\b/g, "luktar prutt");
 	v = v.replace(/\bgynnar sverigedemokraterna\b/g, "luktar prutt");
-	
+	v = v.replace(/\bgynnar Sverigedemokraterna\b/g, "luktar prutt");
+	v = v.replace(/\bgynna SD\b/g, "lukta prutt");
+	v = v.replace(/\bgynna sverigedemokraterna\b/g, "lukta prutt");
+	v = v.replace(/\bgynna Sverigedemokraterna\b/g, "lukta prutt");
 	textNode.nodeValue = v;
 }
